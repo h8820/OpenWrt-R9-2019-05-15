@@ -467,10 +467,6 @@ zyxel,keenetic-extra-ii)
 	set_wifi_led "$boardname:green:wifi"
 	ucidef_set_led_switch "internet" "internet" "$boardname:green:internet" "switch0" "0x01"
 	;;
-zte,e8820v2)
-	ucidef_set_led_netdev "sys" "SYS_LED" "white:sys" "eth0" "tx rx"
-	ucidef_set_led_default "power" "POWER_LED" "white:power" "0x01"
-	;;	
 youku-yk1)
 	set_wifi_led "$boardname:blue:air"
 	ucidef_set_led_switch "wan" "wan" "$boardname:blue:wan" "switch0" "0x10"
